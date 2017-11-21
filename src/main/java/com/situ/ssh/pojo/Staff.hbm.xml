@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.situ.ssh.pojo" auto-import="true">
+		<class name="Staff" table="staff">
+			<id name="id" column="id">
+				<generator class="native"></generator>
+			</id>
+			
+			<property name="num" column="num" ></property>
+			<property name="account" column="account" type="java.lang.String"></property>
+			<property name="password" column="password" type="java.lang.String"></property>
+			<property name="role" column="role"></property>
+			<property name="name" column="name" type="java.lang.String"></property>
+			<property name="phone" column="phone"></property>
+			<property name="qq" column="qq"></property>
+			<property name="wechat" column="wechat" type="java.lang.String"></property>
+			<property name="date" column="date" type="java.util.Date"></property>
+		</class>
+</hibernate-mapping>
