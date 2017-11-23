@@ -27,7 +27,7 @@
 }
 .accordion {
   background: #ffffff;
-  border-color: #D3D3D3;
+  border-color: #FFE4E1;
 }
 .accordion .accordion-header {
   background: #f3f3f3;
@@ -47,7 +47,7 @@
 }
 .accordion .panel-last > .accordion-header-selected,
 .accordion .panel-last > .accordion-header-border {
-  border-bottom-color: #D3D3D3;
+  border-bottom-color: 	#FFE4E1;
 }
 .accordion> .panel-hleft {
   float: left;
@@ -66,7 +66,7 @@
 }
 .accordion> .panel-hleft.panel-last > .accordion-header-selected,
 .accordion> .panel-hleft.panel-last > .accordion-header-border {
-  border-right-color: #D3D3D3;
+  border-right-color: 	#FFE4E1;
 }
 .accordion> .panel-hright {
   float: right;
@@ -85,5 +85,5 @@
 }
 .accordion> .panel-hright.panel-last > .accordion-header-selected,
 .accordion> .panel-hright.panel-last > .accordion-header-border {
-  border-left-color: #D3D3D3;
+  border-left-color: 	#FFE4E1;
 }

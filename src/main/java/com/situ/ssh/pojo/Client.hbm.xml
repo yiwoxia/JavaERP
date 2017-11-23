@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.situ.ssh.pojo" auto-import="true">
+		<class name="Client" table="client">
+			<id name="id" column="id">
+				<generator class="native"></generator>
+			</id>
+			
+			<property name="name" column="name" type="java.lang.String"></property>
+			<property name="level" column="level" type="java.lang.String"></property>
+			<property name="zfb" column="zfb" type="java.lang.String"></property>
+			<property name="weixin" column="weixin" type="java.lang.String"></property>
+			<property name="salesperso" column="salesperso" type="java.lang.String"></property>
+			<property name="phone" column="phone" type="java.lang.String"></property>
+			<property name="address" column="address" type="java.lang.String"></property>
+			<property name="id_card" column="id_card" type="java.lang.String"></property>
+		</class>
+</hibernate-mapping>

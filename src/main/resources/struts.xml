@@ -16,14 +16,57 @@
 		</action>
 		<!-- 管理员 -->
 		<action name="adminAction_*" class="adminAction" method="{1}">
-			<result name="login">/WEB-INF/pages/admin/login.jsp</result>
+			<result name="toLogin">/WEB-INF/pages/admin/login.jsp</result>
 			<result name="index">/WEB-INF/pages/index/index.jsp</result>
+		</action>
+		<!-- 银行账款 -->
+		<action name="to_*">
+			<result type="dispatcher">/WEB-INF/pages/bank/{1}.jsp</result>
+		</action>
+		
+		<!-- 商品信息 -->
+		<action name="to_*">
+			<result type="dispatcher">/WEB-INF/pages/products/{1}.jsp</result>
+		</action>	
+		<!-- 订单 -->
+		<action name="to_*">
+			<result type="dispatcher">/WEB-INF/pages/orders/{1}.jsp</result>
+		</action>
+		<!--  公司基础数据  -->
+		<action name="datadic_*">
+			<result type="dispatcher">/WEB-INF/pages/userRole/{1}.jsp</result>
+		</action>
+		<action name="admin_*">
+			<result type="dispatcher">/WEB-INF/pages/admin/{1}.jsp</result>
 		</action>
 		<!-- 学生 -->
 		<action name="studentAction_*" class="studentAction" method="{1}">
 		</action>
 		<!-- 员工 -->
 		<action name="staffAction_*" class="staffAction" method="{1}">
+		</action>
+		<!-- 客户 -->
+		<action name="clientAction_*" class="clientAction" method="{1}">
+		</action>
+		<!-- 数据字典 -->
+		<action name="dataDic_*" class="dataDicAction" method="{1}">
+		</action>
+		<!-- 仓库 -->
+		<action name="store_*" class="storeAction" method="{1}">
+		</action>
+		<!-- 订单 -->
+		<action name="orders_*" class="ordersAction" method="{1}">
+		</action>
+		<!-- 银行账款 -->
+		<action name="bank_*" class="bankAction" method="{1}">
+		</action>
+		<!-- 登录登出 -->
+		<action name="index_*" class="indexAction" method="{1}">
+			<result name="index">/WEB-INF/pages/index/index.jsp</result>
+			<result name="login">/WEB-INF/pages/admin/login.jsp</result>
+		</action>
+		<!-- 产品 -->
+		<action name="product_*" class="productAction" method="{1}">
 		</action>
 	</package>
 </struts>

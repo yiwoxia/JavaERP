@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.situ.ssh.pojo" auto-import="true">
+		<class name="Orders" table="orders">
+			<id name="id" column="id">
+				<generator class="native"></generator>
+			</id>
+			<property name="order_no" column="order_no" type="java.lang.String"></property>
+			<property name="user" column="user" type="java.lang.String"></property>
+			<property name="payer" column="payer" type="java.lang.String"></property>
+			<property name="payment" column="payment" type="java.lang.Double"></property>
+			<property name="status" column="status" type="java.lang.Integer"></property>
+			<property name="time" column="time" type="java.util.Date"></property>
+		</class>
+</hibernate-mapping>

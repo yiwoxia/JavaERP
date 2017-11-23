@@ -40,24 +40,39 @@ public class BaseDaoImpl<T> extends HibernateDaoSupport implements IBaseDao<T>{
 	}
 	
 	@Override
-	public void save(T entity) {
-		getHibernateTemplate().save(entity);
+	public boolean save(T entity) {
+		try {
+			getHibernateTemplate().save(entity);
+		} catch (Exception e) {
+			return false;
+		}
+		return true;
 	}
 
 	@Override
-	public void delete(T entity) {
-		getHibernateTemplate().delete(entity);
+	public boolean delete(T entity) {
+		try {
+			getHibernateTemplate().delete(entity);
+		} catch (Exception e) {
+			return false;
+		}
+		return true;
 	}
 
 	@Override
-	public void update(T entity) {
-		getHibernateTemplate().update(entity);
+	public boolean update(T entity) {
+		try {
+			getHibernateTemplate().update(entity);
+		} catch (Exception e) {
+			return false;
+		}
+		return true;
+		
 	}
 
 	@Override
-	public void findById(Serializable id) {
-		//getHibernateTemplate().get(Admin.class, id);
-		getHibernateTemplate().get(entityClass, id);
+	public T findById(Serializable id) {
+		return getHibernateTemplate().get(entityClass, id);
 	}
 
 	@Override

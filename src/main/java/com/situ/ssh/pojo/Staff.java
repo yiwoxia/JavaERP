@@ -13,7 +13,7 @@ public class Staff {
 	/**员工密码*/
 	private String password;
 	/**员工角色*/
-	private String role;
+	private Integer role;
 	/**员工真实姓名*/
 	private String name;
 	/**手机号*/
@@ -30,7 +30,7 @@ public class Staff {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Staff(Integer id, Integer num, String account, String password, String role, String name, Integer phone,
+	public Staff(Integer id, Integer num, String account, String password, Integer role, String name, Integer phone,
 			Integer qq, String wechat, Date date) {
 		super();
 		this.id = id;
@@ -77,11 +77,11 @@ public class Staff {
 		this.password = password;
 	}
 
-	public String getRole() {
+	public Integer getRole() {
 		return role;
 	}
 
-	public void setRole(String role) {
+	public void setRole(Integer role) {
 		this.role = role;
 	}
 
